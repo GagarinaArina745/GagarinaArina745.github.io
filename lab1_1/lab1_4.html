@@ -15,20 +15,20 @@
         <h2>Альтернативный текст</h2>
         <p>Атрибут <code>alt</code> предоставляет краткое описание изображения. Он содержит альтернативный текст, который отображается, если изображение не может быть выведено. Пользовательские агенты должны отображать альтернативный текст, если они не поддерживают изображения, или сконфигурированы так, чтобы не показывать изображения (отключен показ изображений).</p>
 
-        <img src="images/html5-logo.png" alt="HTML5 Logo">
-        <img src="images/html5-logo.svg" alt="HTML5 Logo">
-        <img src="images/redcat.jpg" alt="Red Cat">
+        <img src="image/html5-logo.png" alt="HTML5 Logo">
+        <img src="image/html5-logo.svg" alt="HTML5 Logo">
+        <img src="image/redcat.jpg" alt="Red Cat">
 
         <h2>Размеры изображения</h2>
         <p>Атрибуты <code>width</code> и <code>height</code> задают размеры области изображения. Если оба атрибута не заданы, размер изображения будет определен после его полной загрузки, после чего размеры области будут изменены для размещения содержания картинки. Если задан только один из атрибутов, второй размер будет высчитан в соответствие с пропорциями изображения и заданным атрибутом.</p>
 
-        <img src="images/html5-logo.png" alt="HTML5 Logo" width="200" height="100">
+        <img src="image/html5-logo.png" alt="HTML5 Logo" width="200" height="100">
 
         <h2>Подпись к изображению</h2>
         <p>Для группирования любых элементов, например, изображений и подписей к ним используется элемент <code>figure</code>. Он не должен быть связан непосредственно с основным содержимым документа и при его перемещении в другое место смысл текста не должен меняться. Обычно применяется для иллюстраций, фрагментов кода, схем, графиков, диаграмм и др.</p>
 
         <figure>
-            <img src="images/redcat.jpg" alt="Red Cat">
+            <img src="image/redcat.jpg" alt="Red Cat">
             <figcaption> Рыжий кот</figcaption>
         </figure>
 
@@ -36,9 +36,9 @@
         <p>HTML-элемент <code>picture</code> служит контейнером для одного или более элементов <code>source</code> и одного элемента <code>img</code> для обеспечения оптимальной версии изображения для различных размеров экрана. Браузер рассмотрит каждый из дочерних элементов <code>source</code> и выберет один, соответствующий лучшему совпадению; если совпадений среди элементов <code>source</code> не найдено, то будет выбран файл, указанный атрибутом <code>src</code> элемента <code>img</code>. Затем выбранное изображение отображается в пространстве, занятом элементом <code>img</code>.</p>
 
         <picture>
-            <source media="(max-width: 600px)" srcset="images/small.jpg">
-            <source media="(max-width: 1200px)" srcset="images/aquaria.jpg">
-            <img src="images/small.jpg" alt="Mushroom">
+            <source media="(max-width: 600px)" srcset="image/small.jpg">
+            <source media="(max-width: 1200px)" srcset="image/aquaria.jpg">
+            <img src="image/small.jpg" alt="Mushroom">
 
         </picture>
 

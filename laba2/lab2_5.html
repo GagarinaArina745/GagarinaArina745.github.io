@@ -4,21 +4,6 @@
 <head>
     <meta charset="utf-8">
     <title>Форма</title>
-    <style>
-        table {
-            border-collapse: collapse;
-        }
-
-        td {
-            padding: 5px;
-        }
-
-        /* input {
-        width: 100%;
-        padding: 5px;
-        box-sizing: border-box;
-    } */
-    </style>
 </head>
 
 <body>
@@ -45,25 +30,15 @@
             <tr>
                 <td><label>Год рождения</label></td>
                 <td><select id="birth">
-                        <!-- <option value=""></option> -->
                         <script>
 
-                            for (var year = 1940; year <= 2024; year++) {
+                            for (var year = 1980; year <= 2020; year++) {
                                 if (year === 1981) {
                                     document.write("<option value='" + year + "' selected>" + year + "</option>");
                                 } else {
                                     document.write("<option value='" + year + "'>" + year + "</option>");
                                 }
                             }
-//генерация текста внутри тега для списка
-
-                            // let y = 1940
-                            // while(y<2024)
-                            // {
-                            //     document.getElementById('birth').innerHTML += '<option ' + (y === 1970 ? 'selected' : '') + '>' + y + '</option>';
-                            //     y++
-                            //     // document.getElementById('birth').innerHTML += '<option>'+y+'</option>'
-                            // }
                         </script>
                     </select>
                     <span>-й</span>
@@ -80,8 +55,6 @@
                         for="germany">Немецкий</label><br>
                     <input type="checkbox" id="english" name="language" value="english"><labeL
                         for="english">Английский</label><br>
-                    <input type="checkbox" id="chinese" name="language" value="chinese"><labeL
-                        for="chinese">Китайский</label><br>
                 </td>
             </tr>
 

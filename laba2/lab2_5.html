@@ -30,21 +30,11 @@
             <tr>
                 <td><label>Год рождения</label></td>
                 <td><select id="birth">
-                        <script>
-
-                            for (var year = 1980; year <= 2020; year++) {
-                                if (year === 1981) {
-                                    document.write("<option value='" + year + "' selected>" + year + "</option>");
-                                } else {
-                                    document.write("<option value='" + year + "'>" + year + "</option>");
-                                }
-                            }
-                        </script>
+                    
                     </select>
-                    <span>-й</span>
                 </td>
             </tr>
-
+         
             <tr>
                 <td><label>Я знаю</label></td>
                 <td><input type="checkbox" id="russian" name="language" value="russian" checked><labeL
@@ -57,7 +47,22 @@
                         for="english">Английский</label><br>
                 </td>
             </tr>
-
+            <form>
+                <label>
+                  <input type="checkbox" name="languages" value="HTML">
+                  Хочу изучать HTML
+                </label>
+                <br>
+                <label>
+                  <input type="checkbox" name="languages" value="CSS">
+                  Хочу изучать CSS
+                </label>
+                <br>
+                <label>
+                  <input type="checkbox" name="languages" value="JS">
+                  Хочу изучать JS
+                </label>
+              </form>
             <tr>
                 <td><label>Обо мне</label></td>
                 <td><textarea id="about" name="about" cols="30" rows="10"

@@ -8,25 +8,24 @@
 
 <body>
     <h2>Форма регистрации пользователя</h2>
-    <form action="#">
+    <form action="#" method="post">
         <table>
-                <td><label>E-mail</label></td>
-                <td><input type="email" id="e-mail" name="e-mail" required placeholder="Введите e-mail"></td>
+                <td>E-mail</td>
+                <td><input type="email" id="e-mail" name="e-mail" placeholder="Введите e-mail" required></td>
             </tr>
             <tr>
-                <td><label>Дата рождения</label></td>
+                <td>Пароль</td>
+                <td><input type="password" name="password" placeholder="Введите пароль" required></td>
+            </tr>
+            <tr>
+                <td>Дата рождения</td>
                 <td><input type="date" id="start" name="trip-start" value="1930-07-22" min="2000-01-01" max="2024-12-31" />
                 </td>
             </tr>
             <tr>
-                <td><label>Пароль</label></td>
-                <td><input type="password" id="password" name="password" required placeholder="Введите пароль"></td>
-            </tr>
-
-            <tr>
-                <td><label>Пол</label></td>
-                <td><input type="radio" id="male" name="gender" value="male" checked><label for="male">Мужчина</label>
-                    <input type="radio" id="female" name="gender" value="female"><label for="female">Женщина</label>
+                <td>>Пол</td>
+                <td><input type="radio"  name="gender" id="male" value="male" checked><label for="male">Мужчина</label>
+                    <input type="radio"  name="gender" id="female" value="female" ><label for="female">Женщина</label>
                 </td>
             </tr>
          

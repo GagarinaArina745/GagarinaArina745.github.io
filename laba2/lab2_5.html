@@ -10,15 +10,14 @@
     <h2>Форма регистрации пользователя</h2>
     <form action="#">
         <table>
-            <tr>
-                <td><label>Дата рождения</label></td>
-                <td colspan="2"><input type="date" name="birthdate" required placeholder="дд.мм.гггг"></td>
-            </tr>
-            <tr>
                 <td><label>E-mail</label></td>
                 <td><input type="email" id="e-mail" name="e-mail" required placeholder="Введите e-mail"></td>
             </tr>
-
+            <tr>
+                <td><label>Дата рождения</label></td>
+                <td><input type="date" id="start" name="trip-start" value="1930-07-22" min="2000-01-01" max="2024-12-31" />
+                </td>
+            </tr>
             <tr>
                 <td><label>Пароль</label></td>
                 <td><input type="password" id="password" name="password" required placeholder="Введите пароль"></td>
